@@ -36,6 +36,8 @@ include 'dbclose.php';
             <p>Address: <?php echo $row['address']; ?></p>
             <p>Email: <?php echo $row['email']; ?></p>
             <p>Faculty: <?php echo $row['faculty']; ?></p>
+            <a href="editstudent.php?stdid=<?php echo $row['id']; ?>" class="bg-blue-500 text-white px-3 py-1 rounded">Edit</a>
+            <a href="deletestudent.php" class="bg-red-500 text-white px-3 py-1 rounded">Delete</a>
         </div>
     <?php    
     }
